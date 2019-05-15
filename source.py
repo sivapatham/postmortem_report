@@ -16,9 +16,7 @@ class report:
         self.rtemp = input ('Enter room temprature: ')
     def calc(self):
         self.c = self.temp1 - self.rtemp
-        print self.c
         self.k = (math.log((self.temp2 - self.rtemp) / self.c)) / self.t
-        print self.k
         self.et = -1 * (math.log((98.6 - self.rtemp) / self.c)) / self.k
     def print_report(self):
         print 'The time of death is ',self.et,'before the measurement of the first temprature'
